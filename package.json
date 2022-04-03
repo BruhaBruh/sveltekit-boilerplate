@@ -6,10 +6,10 @@
     "url": "https://github.com/BruhaBruh"
   },
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
+    "dev": "env-cmd svelte-kit dev",
+    "build": "env-cmd svelte-kit build",
     "package": "svelte-kit package",
-    "preview": "svelte-kit preview",
+    "preview": "env-cmd svelte-kit preview",
     "prepare": "svelte-kit sync",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -24,6 +24,7 @@
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
     "autoprefixer": "^10.4.2",
+    "env-cmd": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-svelte3": "^3.2.1",
